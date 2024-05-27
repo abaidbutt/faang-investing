@@ -8,6 +8,7 @@ const ContactUsSection = () => {
         style={{
           backgroundImage: `url(/contact-back.png)`,
         }}
+        id="contact"
       >
         <h2 className="text-3xl font-bold">CONTACT US</h2>
         <p className="mt-4 md:text-xl text-md">

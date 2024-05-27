@@ -24,19 +24,19 @@ const Header = () => {
         {/* Navigation Links */}
         <nav className="hidden md:flex md:space-x-4 space-x-2">
           <Link
-            href="/app"
+            href="/#app"
             className="text-gray-700 font-semibold text-primary"
           >
             App
           </Link>
           <Link
-            href="/security"
+            href="/#security"
             className="text-gray-700 font-semibold text-primary"
           >
             Security
           </Link>
           <Link
-            href="/contact"
+            href="/#contact"
             className="text-gray-700 font-semibold text-primary"
           >
             Contact
@@ -57,7 +57,7 @@ const Header = () => {
           <ul className="flex flex-col items-center space-y-4 py-4">
             <li>
               <Link
-                href="/app"
+                href="/#app"
                 className="text-gray-700 font-semibold text-primary"
                 onClick={toggleNav}
               >
@@ -66,7 +66,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/security"
+                href="/#security"
                 className="text-gray-700 font-semibold text-primary"
                 onClick={toggleNav}
               >
@@ -75,7 +75,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/contact"
+                href="/#contact"
                 className="text-gray-700 font-semibold text-primary"
                 onClick={toggleNav}
               >

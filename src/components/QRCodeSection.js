@@ -4,9 +4,15 @@ import StoreButtons from "./StoreButtons";
 const QRCodeSection = () => {
   return (
     <div>
-      <img src="/people.png" alt="QR Code" className="w-full md:block hidden" />
+      <img
+        src="/people.png"
+        alt="QR Code"
+        className="w-full md:block hidden"
+        
+      />
       <StoreButtons />
       <main
+      id="app"
         className="grid grid-cols-1 md:grid-cols-12 items-center md:py-20 md:px-10 md:bg-primary"
         style={{
           backgroundImage: `url(/portfolio-back.png)`,

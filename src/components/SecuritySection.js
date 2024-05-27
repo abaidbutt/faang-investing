@@ -31,7 +31,7 @@ const SecuritySection = () => {
       }}
     >
       <div className="container mx-auto text-center">
-        <h2 className="md:text-3xl text-xl font-bold">
+        <h2 className="md:text-3xl text-xl font-bold" id="security">
           SECURITY IS OUR PRIORITY
         </h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 md:gap-12 p-5">
