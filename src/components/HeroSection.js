@@ -8,13 +8,13 @@ const HeroSection = () => {
         <h1 className="md:text-6xl text-2xl font-bold md:px-12 px-5 text-primary ">
           FAANG INVESTING COMMUNITY
         </h1>
-        <p className="mt-4 text-2xl text-secondary md:px-12 px-5 font-semibold">
+        <p className="mt-4 md:text-2xl text-secondary md:px-12 px-5 font-semibold">
           We help people working in BigTech make better financial decisions with
           the data and insights provided by AI
         </p>
       </section>
       <div className="mt-8 justify-center text-xl md:block hidden">
-        <LoginSection />
+      <LoginSection />
       </div>
     </main>
   );

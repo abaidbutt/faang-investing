@@ -10,23 +10,14 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm py-4 relative">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="bg-white md:shadow-sm py-4 relative">
+      <div className="container mx-auto flex md:justify-between items-center justify-end">
         {/* Desktop Logo */}
         <div className="hidden md:flex items-center w-full justify-start">
           <img
             src="/clubs-logo.png"
             alt="StockClub Icon"
             className="h-8 md:mr-2 w-auto"
-          />
-        </div>
-
-        {/* Mobile Logo */}
-        <div className="md:hidden flex items-center w-full justify-center">
-          <img
-            src="/mobile-logo.png"
-            alt="StockClub Icon"
-            className="h-8 w-auto"
           />
         </div>
 
@@ -54,7 +45,7 @@ const Header = () => {
 
         {/* Hamburger Menu Icon */}
         <div className="md:hidden flex items-center">
-          <button onClick={toggleNav} className="text-gray-700">
+          <button onClick={toggleNav} className="text-primary">
             {isNavOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
@@ -94,6 +85,14 @@ const Header = () => {
           </ul>
         </nav>
       )}
+      {/* Mobile Logo */}
+      <div className="md:hidden flex items-center w-full justify-center">
+        <img
+          src="/mobile-logo.png"
+          alt="StockClub Icon"
+          className="h-12 w-auto"
+        />
+      </div>
     </header>
   );
 };

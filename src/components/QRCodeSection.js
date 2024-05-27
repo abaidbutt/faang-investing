@@ -27,7 +27,7 @@ const QRCodeSection = () => {
               />
             </div>
             <div className="md:col-span-8 col-span-12 relative z-10 md:p-10 p-5">
-              <h2 className="md:text-3xl text-md text-secondary md:text-left text-center font-medium">
+              <h2 className="md:text-3xl text-lg text-secondary md:text-left text-center font-medium">
                 <span className="font-bold">Sign Up today </span>
                 and manage your portfolio like a pro with a personalized
                 assistant and access to a trusted tech community of 1,200

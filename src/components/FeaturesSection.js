@@ -146,8 +146,8 @@ const FeatureCard = ({ title, description, image, image2, order, srcback }) => {
     <div
       className={`bg-white p-6 shadow-lg flex flex-col md:flex-row items-center h-full rounded-xl order-${order}`}
     >
-      <div className="bg-white p-6 rounded-[15px] w-full md:w-1/2 md:ml-6 mt-4 md:mt-0">
-        <h3 className="md:text-4xl text-2xl mb-2 md:px-12 px-2 text-secondary font-medium">
+      <div className="bg-white md:p-6 rounded-[15px] w-full md:w-1/2 md:ml-6 mt-4 md:mt-0 text-center md:text-left">
+        <h3 className="md:text-4xl text-lg mb-2 md:px-12 text-secondary font-medium">
           <span className="font-semibold">{title} </span>
           {description}
         </h3>
@@ -215,8 +215,8 @@ const FeatureCard2 = ({
           className="h-full object-contain rounded-md flex-1"
         />
       </motion.div>
-      <div className="bg-white p-6 rounded-[15px] w-full md:w-1/2 md:ml-6 mt-4 md:mt-0">
-        <h3 className="md:text-4xl text-2xl mb-2 md:px-12 px-2 text-secondary font-medium">
+      <div className="bg-white md:p-6 rounded-[15px] w-full md:w-1/2 md:ml-6 mt-4 md:mt-0 text-center md:text-left">
+        <h3 className="md:text-4xl text-lg mb-2 md:px-12 text-secondary font-medium">
           <span className="font-semibold">{title} </span>
           {description}
         </h3>
