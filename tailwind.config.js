@@ -25,7 +25,9 @@ module.exports = {
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
       primary:"#00ABE1",
-      secondary:"#127398"
+      secondary:"#127398",
+      error:"#EC4034",
+      warning:"#ffc730"
     },
   },
   plugins: [],

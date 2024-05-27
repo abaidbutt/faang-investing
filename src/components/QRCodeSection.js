@@ -13,7 +13,7 @@ const QRCodeSection = () => {
         }}
       >
         <div className="col-span-1 md:col-span-4 md:flex justify-center hidden items-center">
-          <div className="bg-primary border-white rounded-3xl p-10 border-[12px] relative z-10 md:flex justify-center items-center h-full hidden">
+          <div className="bg-primary border-white rounded-3xl py-12 px-10 border-[12px] relative z-10 md:flex justify-center items-center h-full hidden">
             <img src="/qr-code.png" alt="QR Code" className="md:w-96 w-40" />
           </div>
         </div>
@@ -27,7 +27,7 @@ const QRCodeSection = () => {
               />
             </div>
             <div className="md:col-span-8 col-span-12 relative z-10 md:p-10 p-5">
-              <h2 className="md:text-2xl text-md text-secondary md:text-left text-center">
+              <h2 className="md:text-3xl text-md text-secondary md:text-left text-center font-medium">
                 <span className="font-bold">Sign Up today </span>
                 and manage your portfolio like a pro with a personalized
                 assistant and access to a trusted tech community of 1,200

@@ -26,8 +26,8 @@ const LoginSection = () => {
 
   return (
     <section className="">
-      <div className="max-w-md mx-auto border-primary rounded-3xl p-6 border-8">
-        <h2 className="text-2xl font-bold text-center text-primary">
+      <div className="max-w-md mx-auto border-primary rounded-3xl p-10 border-[12px]">
+        <h2 className="text-2xl font-semibold text-center text-primary">
           Welcome Back
         </h2>
         <form className="mt-6" onSubmit={handleSubmit(onSubmit)}>
@@ -35,40 +35,40 @@ const LoginSection = () => {
             <input
               type="email"
               placeholder="Email"
-              className={`w-full p-2  border rounded ${
-                errors.email ? "border-red-500" : "border-primary"
+              className={`w-full p-2 text-secondary  border rounded  focus:outline-primary active:outline-primary ${
+                errors.email ? "border-error" : "border-primary"
               } `}
               {...register("email")}
             />
             {errors.email && (
-              <p className="text-red-500 text-sm">Wrong username</p>
+              <p className="text-error text-sm">Wrong username</p>
             )}
             <input
               type="password"
               placeholder="Password"
-              className={`w-full p-2  border rounded ${
-                errors.password ? "border-red-500" : "border-primary"
+              className={`w-full p-2  border rounded text-secondary focus:outline-primary active:outline-primary ${
+                errors.password ? "border-error" : "border-primary"
               } `}
               {...register("password")}
             />
             {errors.password && (
-              <p className="text-red-500 text-sm">Wrong password</p>
+              <p className="text-error text-sm">Wrong password</p>
             )}
           </div>
           <div className="text-right">
-            <a href="#" className="text-primary text-sm">
+            <a href="#" className="text-primary text-sm font-semibold">
               Forgot Password?
             </a>
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 my-4 bg-primary text-white rounded bg-primary"
+            className="w-full px-4 py-2 my-4 text-white rounded bg-primary"
           >
             Log In
           </button>
           <div className="text-center mt-4 flex justify-around">
             <p className="text-gray-500 text-sm">Don't have an account?</p>
-            <a href="#" className="text-primary text-sm">
+            <a href="#" className="text-primary text-sm font-semibold">
               Create One
             </a>
           </div>

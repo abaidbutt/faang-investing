@@ -34,19 +34,19 @@ const Header = () => {
         <nav className="hidden md:flex md:space-x-4 space-x-2">
           <Link
             href="/app"
-            className="text-gray-700 hover:font-semibold text-primary"
+            className="text-gray-700 font-semibold text-primary"
           >
             App
           </Link>
           <Link
             href="/security"
-            className="text-gray-700 hover:font-semibold text-primary"
+            className="text-gray-700 font-semibold text-primary"
           >
             Security
           </Link>
           <Link
             href="/contact"
-            className="text-gray-700 hover:font-semibold text-primary"
+            className="text-gray-700 font-semibold text-primary"
           >
             Contact
           </Link>
@@ -67,7 +67,7 @@ const Header = () => {
             <li>
               <Link
                 href="/app"
-                className="text-gray-700 hover:font-semibold text-primary"
+                className="text-gray-700 font-semibold text-primary"
                 onClick={toggleNav}
               >
                 App
@@ -76,7 +76,7 @@ const Header = () => {
             <li>
               <Link
                 href="/security"
-                className="text-gray-700 hover:font-semibold text-primary"
+                className="text-gray-700 font-semibold text-primary"
                 onClick={toggleNav}
               >
                 Security
@@ -85,7 +85,7 @@ const Header = () => {
             <li>
               <Link
                 href="/contact"
-                className="text-gray-700 hover:font-semibold text-primary"
+                className="text-gray-700 font-semibold text-primary"
                 onClick={toggleNav}
               >
                 Contact

@@ -31,7 +31,9 @@ const SecuritySection = () => {
       }}
     >
       <div className="container mx-auto text-center">
-        <h2 className="md:text-3xl text-xl font-bold">SECURITY IS OUR PRIORITY</h2>
+        <h2 className="md:text-3xl text-xl font-bold">
+          SECURITY IS OUR PRIORITY
+        </h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 md:gap-12 p-5">
           {securityFeatures.map((feature, index) => (
             <SecurityFeatureCard
@@ -43,7 +45,7 @@ const SecuritySection = () => {
           ))}
         </div>
 
-        <button className="px-12 py-2 mt-10 bg-[#ffc730] text-white rounded">
+        <button className="px-12 py-2 mt-10 bg-warning text-white rounded-lg">
           Learn More About Security
         </button>
       </div>
@@ -53,7 +55,7 @@ const SecuritySection = () => {
 
 const SecurityFeatureCard = ({ title, description, image }) => {
   return (
-    <div className="bg-white p-10 shadow-lg rounded-xl flex flex-col items-center mx-auto md:border-0 border-b-secondary border-b-4">
+    <div className="bg-white p-12 shadow-lg rounded-xl flex flex-col items-center mx-auto md:border-0 border-b-secondary border-b-4">
       <div className="mt-8 flex justify-center">
         <motion.img
           src={image}
@@ -63,8 +65,8 @@ const SecurityFeatureCard = ({ title, description, image }) => {
           transition={{ type: "spring", stiffness: 300 }}
         />
       </div>
-      <h3 className="text-xl font-semibold mt-6 text-secondary ">{title}</h3>
-      <p className="mt-2 text-center text-lg text-secondary">{description}</p>
+      <h3 className="text-xl font-semibold mt-6 text-secondary my-3">{title}</h3>
+      <p className="mt-2 text-center text-lg text-secondary font-medium">{description}</p>
     </div>
   );
 };

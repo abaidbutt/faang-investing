@@ -53,7 +53,7 @@ const FeaturesSection = () => {
           backgroundImage: `url(${features[0].srcback})`,
         }}
       >
-        <div className="flex flex-col gap-6 py-10 px-5">
+        <div className="flex flex-col gap-6 py-12 px-5">
           <FeatureCard
             title={features[0].title}
             description={features[0].description}
@@ -71,7 +71,7 @@ const FeaturesSection = () => {
           backgroundImage: `url(${features[1].srcback})`,
         }}
       >
-        <div className="flex flex-col gap-6 py-10 px-5">
+        <div className="flex flex-col gap-6 py-12 px-5">
           <FeatureCard2
             title={features[1].title}
             description={features[1].description}
@@ -89,7 +89,7 @@ const FeaturesSection = () => {
           backgroundImage: `url(${features[2].srcback})`,
         }}
       >
-        <div className="flex flex-col gap-6 py-10 px-5">
+        <div className="flex flex-col gap-6 py-12 px-5">
           <FeatureCard
             title={features[2].title}
             description={features[2].description}
@@ -107,7 +107,7 @@ const FeaturesSection = () => {
           backgroundImage: `url(${features[3].srcback})`,
         }}
       >
-        <div className="flex flex-col gap-6 py-10 px-5">
+        <div className="flex flex-col gap-6 py-12 px-5">
           <FeatureCard2
             title={features[3].title}
             description={features[3].description}
@@ -147,8 +147,8 @@ const FeatureCard = ({ title, description, image, image2, order, srcback }) => {
       className={`bg-white p-6 shadow-lg flex flex-col md:flex-row items-center h-full rounded-xl order-${order}`}
     >
       <div className="bg-white p-6 rounded-[15px] w-full md:w-1/2 md:ml-6 mt-4 md:mt-0">
-        <h3 className="text-2xl mb-2">
-          <span className="font-semibold">{title}</span>
+        <h3 className="md:text-4xl text-2xl mb-2 md:px-12 px-2 text-secondary font-medium">
+          <span className="font-semibold">{title} </span>
           {description}
         </h3>
       </div>
@@ -216,8 +216,8 @@ const FeatureCard2 = ({
         />
       </motion.div>
       <div className="bg-white p-6 rounded-[15px] w-full md:w-1/2 md:ml-6 mt-4 md:mt-0">
-        <h3 className="text-2xl mb-2">
-          <span className="font-semibold">{title}</span>
+        <h3 className="md:text-4xl text-2xl mb-2 md:px-12 px-2 text-secondary font-medium">
+          <span className="font-semibold">{title} </span>
           {description}
         </h3>
       </div>
